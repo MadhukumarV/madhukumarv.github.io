@@ -1,181 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Resume - Madhukumar V</title>
-    <style>
-        /* Global Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-
-        h1 {
-            margin: 0;
-            color: white;
-        }
-
-         h2 {
-            color: #0078D7;
-            text-decoration: none;
-        }
-
-        .a_header{
-    text-decoration: none;
-    color: white;
-        }
-        a{
-            text-decoration: none;
-        }
-        .a_header:hover{
-            text-decoration: underline;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-
-        
-
-        /* Header Styles */
-        header {
-            background: #0078D7;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .profile_img{
-            width: 120px; height: 120px; border-radius: 50%; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-.p-1{
-    margin: 15px 0; font-size: 1.2em;
-}
-.p-2{
-    font-size: 1.1em; 
-}
- /* Footer Styles */
- footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #333;
-            color: white;
-        }
-       
-
-        header p {
-            margin: 5px 0;
-        }
-
-        /* Container Styles */
-        .container {
-            
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-
-        section h2 {
-            border-bottom: 2px solid #0078D7;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-
-        /* Responsive Layout */
-
-        @media screen and (max-width: 768px) {
-    .p-1{
-        font-size: .9rem;
-    }
-    .p-2{
-        font-size: .9em;
-    }
-    .container{
-        margin: 15px;
-        
-    }
-}
-
-       
-    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>New Website</title>
+    <meta name="description" content="A fully responsive modern website template.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <div class="profile" style="text-align: center; padding: 20px 0 0 0; background-color: #0078D7; ">
-            <img src="Profile/20190523121544_IMG_3921 (2).jpg" 
-                 alt="Madhukumar V" 
-                 class="profile_img">
-            <h1 >Madhukumar V</h1>
-            <p  class="p-1">Data Analyst | Quality Specialist | Dashboard Designer</p>
-            <p class="p-2">
-                📍 Bengaluru
-                📧 <a href="Email" class="a_header">madhu8323@gmail.com</a>
-                🔗 <a href="https://www.linkedin.com/in/madhukumar-v-737415181"class="a_header" target="_blank" >LinkedIn</a>
-            </p>
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/new-logo.png" alt="Logo">
+                </div>
+            </div>
         </div>
+    </div>
+    <!-- Preloader End -->
+
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/img/logo/new-logo.png" alt="New Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-10">
+                            <div class="menu-main d-flex align-items-center justify-content-end">
+                                <div class="main-menu">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="#home">Home</a></li>
+                                            <li><a href="#about">About</a></li>
+                                            <li><a href="#services">Services</a></li>
+                                            <li><a href="#portfolio">Portfolio</a></li>
+                                            <li><a href="#contact">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="header-right-btn ml-20">
+                                    <a href="#" class="btn header-btn">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
     </header>
-    
 
-<div class="container">
-    <section>
-        <h2>About Me</h2>
-        <p>I am a detail-oriented data analyst with expertise in transforming raw data into actionable insights. My background in aerospace quality inspection and real-time data analytics enables me to deliver accurate, reliable solutions. Passionate about crafting interactive dashboards and solving complex problems, I aim to drive data-driven decision-making.</p>
-    </section>
+    <main>
+        <!-- Hero Section Start -->
+        <section class="hero-section" id="home">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="hero-content">
+                            <h1>Welcome to Our Modern Website</h1>
+                            <p>Explore amazing features, services, and more with our innovative platform.</p>
+                            <div class="hero-btns">
+                                <a href="#about" class="btn hero-btn">Learn More</a>
+                                <a href="#contact" class="btn hero-btn-outline">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="assets/img/hero/hero-image.png" alt="Hero Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Data Analytics & Visualization:</strong> Power BI, Snowflake, Microsoft Excel, Power Query</li>
-            <li><strong>Programming & Tools:</strong> SQL, Python (for data cleaning and analysis), Microsoft Fabric</li>
-            <li><strong>Quality Assurance:</strong> Visual Inspection, Root Cause Analysis, Process Optimization</li>
-            <li><strong>Soft Skills:</strong> Problem-Solving, Attention to Detail, Team Collaboration</li>
-        </ul>
-    </section>
+        <!-- About Section Start -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>About Us</h2>
+                        <p>We are a team of passionate individuals dedicated to creating impactful solutions for our clients. Our expertise spans across various domains, ensuring excellence in every project we undertake.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="assets/img/about/about-us.png" alt="About Us">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section End -->
 
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Career Aspirations of Gen Z (KultureHire Internship):</strong> Analyzed survey data and built an interactive Excel dashboard showcasing trends and insights.</li>
-            <li><strong>Karnataka Legislative Assembly Election Dashboard (2023):</strong> Cleaned and visualized election data in Power BI using DAX functions.</li>
-            <li><strong>Upstox F&O Data Real-Time Analytics:</strong> Created a real-time Power BI dashboard with custom measures and calculated columns.</li>
-            <li><strong>Czechoslovakia Banking Financial Analysis:</strong> Integrated Snowflake with Power BI for comprehensive financial analysis and predictive insights.</li>
-        </ul>
-    </section>
+        <!-- Services Section Start -->
+        <section class="services-section section-padding" id="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="service-box">
+                            <h3>Web Development</h3>
+                            <p>Custom web solutions tailored to your needs.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="service-box">
+                            <h3>UI/UX Design</h3>
+                            <p>Creating visually stunning and user-friendly designs.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="service-box">
+                            <h3>Digital Marketing</h3>
+                            <p>Driving growth through innovative marketing strategies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section End -->
 
-    <section>
-        <h2>Professional Experience</h2>
-        <ul>
-            <li><strong>Data Analyst Intern | KultureHire:</strong> Cleaned data and created an insightful Excel dashboard for leadership decisions.</li>
-            <li><strong>Quality Inspector | Aerospace Manufacturing:</strong> Conducted visual inspections, root cause analysis, and defect documentation.</li>
-        </ul>
-    </section>
+        <!-- Contact Section Start -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Your Email">
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </section>
+        <!-- Contact Section End -->
+    </main>
 
-    <section>
-        <h2>Certifications</h2>
-        <ul>
-            <li>Microsoft Excel Pivot Table and Analysis Beginner to Pro (Udemy) – Oct 2024</li>
-        </ul>
-    </section>
+    <footer>
+        <div class="footer-area">
+            <div class="container text-center">
+                <p>&copy; <script>document.write(new Date().getFullYear());</script> All Rights Reserved. Developed by Your Name.</p>
+            </div>
+        </div>
+    </footer>
 
-    <section>
-        <h2>Contact Me</h2>
-        <p >📧 <a href="Email" style="color:black">madhu8323@gmail.com</a> | 🔗 <a href="https://www.linkedin.com/in/madhukumar-v-737415181" target="_blank" style="color:black">LinkedIn</a></p>
-    </section>
-</div>
-
-<footer>
-    <p>&copy; 2024 Madhukumar V. All Rights Reserved.</p>
-</footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
