@@ -1,94 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Analyst Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Resume - Madhukumar V</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1 {
+            margin: 0;
+            color: white;
+        }
+
+         h2 {
+            color: #0078D7;
+            text-decoration: none;
+        }
+
+        .a_header{
+    text-decoration: none;
+    color: white;
+        }
+        a{
+            text-decoration: none;
+        }
+        .a_header:hover{
+            text-decoration: underline;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        
+
+        /* Header Styles */
+        header {
+            background: #0078D7;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .profile_img{
+            width: 120px; height: 120px; border-radius: 50%; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+.p-1{
+    margin: 15px 0; font-size: 1.2em;
+}
+.p-2{
+    font-size: 1.1em; 
+}
+ /* Footer Styles */
+ footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: white;
+        }
+       
+
+        header p {
+            margin: 5px 0;
+        }
+
+        /* Container Styles */
+        .container {
+            
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #0078D7;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* Responsive Layout */
+
+        @media screen and (max-width: 768px) {
+    .p-1{
+        font-size: .9rem;
+    }
+    .p-2{
+        font-size: .9em;
+    }
+    .container{
+        margin: 15px;
+        
+    }
+}
+
+       
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <!-- Header -->
-  <header class="bg-blue-500 text-white p-4 md:p-6">
-    <div class="container mx-auto flex flex-wrap justify-between items-center">
-      <h1 class="text-xl md:text-2xl font-bold">Data Analyst Portfolio</h1>
-      <nav class="mt-2 md:mt-0">
-        <a href="#about" class="block md:inline mx-2 hover:text-gray-200">About</a>
-        <a href="#projects" class="block md:inline mx-2 hover:text-gray-200">Projects</a>
-        <a href="#contact" class="block md:inline mx-2 hover:text-gray-200">Contact</a>
-      </nav>
+<body>
+   <header>
+    <div class="profile" style="text-align: center; padding: 20px 0 0 0; background-color: #0078D7;">
+        <img src="Profile/20190523121544_IMG_3921 (2).jpg" 
+             alt="Madhukumar V" 
+             class="profile_img floating-image">
+        <h1>Madhukumar V</h1>
+        <p class="p-1">Data Analyst | Quality Specialist | Dashboard Designer</p>
+        <p class="p-2">
+            📍 Bengaluru
+            📧 <a href="Email" class="a_header">madhu8323@gmail.com</a>
+            🔗 <a href="https://www.linkedin.com/in/madhukumar-v-737415181" class="a_header" target="_blank">LinkedIn</a>
+        </p>
     </div>
-  </header>
+</header>
 
-<section id="about" class="py-8 md:py-12 bg-gray-200">
-  <div class="container mx-auto px-4 md:px-8 text-center">
-    <!-- Add Image -->
-    <img 
-      src="Profile/20190523121544_IMG_3921 (2).jpg"  
-      class="w-32 h-32 md:w-48 md:h-48 rounded-full mx-auto mb-6 shadow-lg"
-    >
-    <h2 class="text-2xl md:text-3xl font-bold mb-4">About Me</h2>
-    <p class="text-base md:text-lg leading-relaxed">
-      I am a passionate data analyst skilled in uncovering insights from data, building dashboards, and enabling data-driven decisions. With expertise in tools like Power BI, Excel, and Snowflake, I aim to bring clarity to complex data.
-    </p>
-  </div>
-</section>
+    
 
+<div class="container">
+    <section>
+        <h2>About Me</h2>
+        <p>I am a detail-oriented data analyst with expertise in transforming raw data into actionable insights. My background in aerospace quality inspection and real-time data analytics enables me to deliver accurate, reliable solutions. Passionate about crafting interactive dashboards and solving complex problems, I aim to drive data-driven decision-making.</p>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="py-8 md:py-12">
-    <div class="container mx-auto px-4 md:px-8">
-      <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">Projects</h2>
-      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        <div class="bg-white p-4 shadow-md rounded-lg hover:shadow-lg transition-shadow">
-          <h3 class="text-lg font-semibold mb-2">Election Data Dashboard</h3>
-          <p class="text-sm md:text-base">
-            A Power BI dashboard analyzing election dynamics for decision-makers.
-          </p>
-        </div>
-        <div class="bg-white p-4 shadow-md rounded-lg hover:shadow-lg transition-shadow">
-          <h3 class="text-lg font-semibold mb-2">Gen Z Career Insights</h3>
-          <p class="text-sm md:text-base">
-            An Excel-based dashboard providing insights into career aspirations.
-          </p>
-        </div>
-        <div class="bg-white p-4 shadow-md rounded-lg hover:shadow-lg transition-shadow">
-          <h3 class="text-lg font-semibold mb-2">Financial Data Analysis</h3>
-          <p class="text-sm md:text-base">
-            A Snowflake-powered project analyzing banking data for actionable insights.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Data Analytics & Visualization:</strong> Power BI, Snowflake, Microsoft Excel, Power Query</li>
+            <li><strong>Programming & Tools:</strong> SQL, Python (for data cleaning and analysis), Microsoft Fabric</li>
+            <li><strong>Quality Assurance:</strong> Visual Inspection, Root Cause Analysis, Process Optimization</li>
+            <li><strong>Soft Skills:</strong> Problem-Solving, Attention to Detail, Team Collaboration</li>
+        </ul>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-8 md:py-12 bg-gray-200">
-    <div class="container mx-auto px-4 md:px-8 text-center">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">Contact Me</h2>
-      <form id="contactForm" class="max-w-lg mx-auto">
-        <div class="mb-4">
-          <label for="name" class="block text-left">Name:</label>
-          <input type="text" id="name" class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300" required>
-        </div>
-        <div class="mb-4">
-          <label for="email" class="block text-left">Email:</label>
-          <input type="email" id="email" class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300" required>
-        </div>
-        <div class="mb-4">
-          <label for="message" class="block text-left">Message:</label>
-          <textarea id="message" class="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-300" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Send</button>
-      </form>
-      <p id="formStatus" class="text-green-500 mt-4 hidden">Message sent successfully!</p>
-    </div>
-  </section>
+    <section>
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Career Aspirations of Gen Z (KultureHire Internship):</strong> Analyzed survey data and built an interactive Excel dashboard showcasing trends and insights.</li>
+            <li><strong>Karnataka Legislative Assembly Election Dashboard (2023):</strong> Cleaned and visualized election data in Power BI using DAX functions.</li>
+            <li><strong>Upstox F&O Data Real-Time Analytics:</strong> Created a real-time Power BI dashboard with custom measures and calculated columns.</li>
+            <li><strong>Czechoslovakia Banking Financial Analysis:</strong> Integrated Snowflake with Power BI for comprehensive financial analysis and predictive insights.</li>
+        </ul>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center p-4 md:p-6">
-    <p class="text-sm md:text-base">&copy; 2024 Data Analyst Portfolio. All rights reserved.</p>
-  </footer>
+    <section>
+        <h2>Professional Experience</h2>
+        <ul>
+            <li><strong>Data Analyst Intern | KultureHire:</strong> Cleaned data and created an insightful Excel dashboard for leadership decisions.</li>
+            <li><strong>Quality Inspector | Aerospace Manufacturing:</strong> Conducted visual inspections, root cause analysis, and defect documentation.</li>
+        </ul>
+    </section>
 
-  <script src="script.js"></script>
+    <section>
+        <h2>Certifications</h2>
+        <ul>
+            <li>Microsoft Excel Pivot Table and Analysis Beginner to Pro (Udemy) – Oct 2024</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact Me</h2>
+        <p >📧 <a href="Email" style="color:black">madhu8323@gmail.com</a> | 🔗 <a href="https://www.linkedin.com/in/madhukumar-v-737415181" target="_blank" style="color:black">LinkedIn</a></p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Madhukumar V. All Rights Reserved.</p>
+</footer>
 </body>
 </html>
