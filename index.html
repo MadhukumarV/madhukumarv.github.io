@@ -8,7 +8,35 @@
     body {
         font-family: 'Segoe UI', Tahoma, sans-serif;
         margin: 0;
-        background: #eef1f5;
+        /* Default Background */
+background: linear-gradient(180deg, #111827, #eef1f5);
+
+/* Left-to-Right Gradient Option */
+/* To use: add class="bg-left-right" to <body> */
+}
+.bg-left-right {
+    background: linear-gradient(90deg, #111827, #eef1f5);
+}
+
+/* Radial Gradient Option */
+/* To use: add class="bg-radial" to <body> */
+.bg-radial {
+    background: radial-gradient(circle, #1f2937, #0f172a);
+}
+
+/* Subtle Grey Background */
+/* To use: add class="bg-grey" to <body> */
+.bg-grey {
+    background: #d9d9d9;
+}
+
+/* Blue-Tinted Gradient */
+/* To use: add class="bg-blue" to <body> */
+.bg-blue {
+    background: linear-gradient(180deg, #0a2540, #3b82f6);
+}
+
+body {
         color: #333;
     }
 
@@ -160,7 +188,7 @@
 
 </style>
 </head>
-<body>
+<body class="dark-theme">
 
 <div class="resume-wrapper">
     <!-- Sidebar -->
@@ -199,18 +227,54 @@
         <section class="section projects">
             <h2 class="section-title">Projects</h2>
             <ul>
-                <li><strong>Gen Z Career Aspirations (Excel Dashboard):</strong> Analyzed survey data and created an interactive dashboard.</li>
-                <li><strong>Karnataka 2023 Election Dashboard:</strong> Used Power BI & DAX to analyze voting patterns and insights.</li>
-                <li><strong>Upstox F&O Real-Time Dashboard:</strong> Implemented measures, calculated columns, and streaming dataset.</li>
-                <li><strong>Czechoslovakia Banking Analysis:</strong> Integrated Snowflake with Power BI for in-depth predictive analytics.</li>
+                <li><strong>Gen Z Career Aspirations (Excel Dashboard):</strong>
+    <ul>
+        <li>Analyzed 500+ survey responses using Excel functions.</li>
+        <li>Identified key behavioral patterns of Gen Z.</li>
+        <li>Built an interactive dashboard highlighting top insights.</li>
+    </ul>
+</li>
+                <li><strong>Karnataka 2023 Election Dashboard:</strong>
+    <ul>
+        <li>Cleaned and transformed raw election datasets using Power Query.</li>
+        <li>Implemented advanced DAX measures for comparative analysis.</li>
+        <li>Created multi-page dashboards for voter demographics.</li>
+    </ul>
+</li>
+                <li><strong>Upstox F&O Real-Time Dashboard:</strong>
+    <ul>
+        <li>Used streaming datasets for real-time market monitoring.</li>
+        <li>Developed 10+ custom measures and calculated columns.</li>
+        <li>Optimized dashboard for high accuracy and low latency.</li>
+    </ul>
+</li>
+                <li><strong>Czechoslovakia Banking Analysis:</strong>
+    <ul>
+        <li>Built a Snowflake pipeline to process financial datasets.</li>
+        <li>Performed predictive modeling for loan and credit insights.</li>
+        <li>Visualized financial KPIs using interactive Power BI charts.</li>
+    </ul>
+</li>
             </ul>
         </section>
 
         <section class="section experience">
             <h2 class="section-title">Professional Experience</h2>
             <ul>
-                <li><strong>Data Analyst Intern – KultureHire:</strong> Cleaned datasets, built dashboards, and delivered insights for decision-making.</li>
-                <li><strong>Quality Inspector – Aerospace Manufacturing:</strong> Conducted inspections, RCA, defect analysis, and documentation.</li>
+                <li><strong>Data Analyst Intern – KultureHire:</strong>
+    <ul>
+        <li>Cleaned and structured raw datasets for reporting.</li>
+        <li>Designed KPI dashboards for business decision-making.</li>
+        <li>Collaborated with stakeholders to refine data needs.</li>
+    </ul>
+</li>
+                <li><strong>Quality Inspector – Aerospace Manufacturing:</strong>
+    <ul>
+        <li>Performed visual inspection on aerospace parts.</li>
+        <li>Identified defects and performed root cause analysis.</li>
+        <li>Reduced recurring issues by documenting defect patterns.</li>
+    </ul>
+</li>
             </ul>
         </section>
 
