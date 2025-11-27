@@ -1,182 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Resume - Madhukumar V</title>
-    <style>
-        /* Global Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-
-        h1 {
-            margin: 0;
-            color: white;
-        }
-
-         h2 {
-            color: #0078D7;
-            text-decoration: none;
-        }
-
-        .a_header{
-    text-decoration: none;
-    color: white;
-        }
-        a{
-            text-decoration: none;
-        }
-        .a_header:hover{
-            text-decoration: underline;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-
-        
-
-        /* Header Styles */
-        header {
-            background: #0078D7;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .profile_img{
-            width: 120px; height: 120px; border-radius: 50%; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-.p-1{
-    margin: 15px 0; font-size: 1.2em;
-}
-.p-2{
-    font-size: 1.1em; 
-}
- /* Footer Styles */
- footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #333;
-            color: white;
-        }
-       
-
-        header p {
-            margin: 5px 0;
-        }
-
-        /* Container Styles */
-        .container {
-            
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-
-        section h2 {
-            border-bottom: 2px solid #0078D7;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-
-        /* Responsive Layout */
-
-        @media screen and (max-width: 768px) {
-    .p-1{
-        font-size: .9rem;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Modern Resume - Madhukumar V</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        margin: 0;
+        background: #eef1f5;
+        color: #333;
     }
-    .p-2{
-        font-size: .9em;
+
+    .resume-wrapper {
+        max-width: 1100px;
+        margin: 30px auto;
+        background: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        display: grid;
+        grid-template-columns: 350px auto;
     }
-    .container{
-        margin: 15px;
-        
+
+    /* Sidebar */
+    .sidebar {
+        background: linear-gradient(180deg, #0056b3, #002f6c);
+        color: #fff;
+        padding: 40px 30px;
     }
+
+    .profile-img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto 20px auto;
+        border: 4px solid rgba(255,255,255,0.4);
+    }
+
+    .name {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .role {
+        text-align: center;
+        font-size: 1rem;
+        opacity: 0.9;
+        margin-bottom: 30px;
+    }
+
+    .sidebar-section-title {
+        font-size: 1.2rem;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-weight: 600;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+        padding-bottom: 5px;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar li {
+        margin: 10px 0;
+        opacity: 0.95;
+        font-size: 0.95rem;
+    }
+
+    /* Main Content */
+    .main {
+        padding: 40px;
+    }
+
+    .section {
+        margin-bottom: 35px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #0056b3;
+        margin-bottom: 10px;
+        border-left: 4px solid #0056b3;
+        padding-left: 10px;
+    }
+
+    .section p, .section li {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .projects ul, .experience ul {
+        list-style: disc;
+        padding-left: 20px;
+    }
+
+    @media (max-width: 900px) {
+        .resume-wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+/* ===== THEME OPTIONS ===== */
+
+/* Dark Theme */
+.dark-theme .sidebar {
+    background: #111827;
+}
+.dark-theme .main {
+    background: #1f2937;
+    color: #f3f4f6;
+}
+.dark-theme .section-title {
+    color: #60a5fa;
+    border-left-color: #60a5fa;
 }
 
-       
-    </style>
+/* Teal Theme */
+.teal-theme .sidebar {
+    background: linear-gradient(180deg,#0f766e,#115e59);
+}
+.teal-theme .section-title {
+    color: #0d9488;
+    border-left-color: #0d9488;
+}
+
+/* Gradient Theme */
+.gradient-theme .sidebar {
+    background: linear-gradient(180deg,#6d28d9,#3b82f6);
+}
+.gradient-theme .section-title {
+    color: #6d28d9;
+    border-left-color: #6d28d9;
+}
+
+/* Minimal White Theme */
+.white-theme .sidebar {
+    background: #ffffff;
+    color: #111;
+}
+.white-theme .sidebar-section-title {
+    border-color: #ccc;
+}
+.white-theme .main {
+    background: #fff;
+}
+.white-theme .section-title {
+    color: #333;
+    border-left-color: #444;
+}
+
+</style>
 </head>
 <body>
-   <header>
-    <div class="profile" style="text-align: center; padding: 20px 0 0 0; background-color: #0078D7;">
-        <img src="Profile/20190523121544_IMG_3921 (2).jpg" 
-             alt="Madhukumar V" 
-             class="profile_img floating-image">
-        <h1>Madhukumar V</h1>
-        <p class="p-1">Data Analyst | Quality Specialist | Dashboard Designer</p>
-        <p class="p-2">
-            📍 Bengaluru
-            📧 <a href="Email" class="a_header">madhu8323@gmail.com</a>
-            🔗 <a href="https://www.linkedin.com/in/madhukumar-v-737415181" class="a_header" target="_blank">LinkedIn</a>
-        </p>
-    </div>
-</header>
 
-    
+<div class="resume-wrapper">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <img src="Profile/20190523121544_IMG_3921 (2).jpg" class="profile-img" />
+        <h1 class="name">Madhukumar V</h1>
+        <p class="role">Data Analyst • Quality Specialist • Dashboard Designer</p>
 
-<div class="container">
-    <section>
-        <h2>About Me</h2>
-        <p>I am a detail-oriented data analyst with expertise in transforming raw data into actionable insights. My background in aerospace quality inspection and real-time data analytics enables me to deliver accurate, reliable solutions. Passionate about crafting interactive dashboards and solving complex problems, I aim to drive data-driven decision-making.</p>
-    </section>
+        <div class="sidebar-section">
+            <h2 class="sidebar-section-title">Contact</h2>
+            <ul>
+                <li>Bengaluru, India</li>
+                <li>Email: madhu8323@gmail.com</li>
+                <li>LinkedIn: linkedin.com/in/madhukumar-v-737415181</li>
+            </ul>
+        </div>
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Data Analytics & Visualization:</strong> Power BI, Snowflake, Microsoft Excel, Power Query</li>
-            <li><strong>Programming & Tools:</strong> SQL, Python (for data cleaning and analysis), Microsoft Fabric</li>
-            <li><strong>Quality Assurance:</strong> Visual Inspection, Root Cause Analysis, Process Optimization</li>
-            <li><strong>Soft Skills:</strong> Problem-Solving, Attention to Detail, Team Collaboration</li>
-        </ul>
-    </section>
+        <div class="sidebar-section">
+            <h2 class="sidebar-section-title">Skills</h2>
+            <ul>
+                <li>Power BI, Excel, Snowflake</li>
+                <li>SQL, Python</li>
+                <li>Data Cleaning, DAX, Power Query</li>
+                <li>Quality Inspection, RCA</li>
+            </ul>
+        </div>
+    </aside>
 
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Career Aspirations of Gen Z (KultureHire Internship):</strong> Analyzed survey data and built an interactive Excel dashboard showcasing trends and insights.</li>
-            <li><strong>Karnataka Legislative Assembly Election Dashboard (2023):</strong> Cleaned and visualized election data in Power BI using DAX functions.</li>
-            <li><strong>Upstox F&O Data Real-Time Analytics:</strong> Created a real-time Power BI dashboard with custom measures and calculated columns.</li>
-            <li><strong>Czechoslovakia Banking Financial Analysis:</strong> Integrated Snowflake with Power BI for comprehensive financial analysis and predictive insights.</li>
-        </ul>
-    </section>
+    <!-- Main Content -->
+    <main class="main">
+        <section class="section about">
+            <h2 class="section-title">About Me</h2>
+            <p>I am a detail-oriented data analyst with expertise in transforming raw data into actionable insights. With strong experience in aerospace quality inspection and real-time analytics, I deliver precise, impactful dashboards and data-driven solutions.</p>
+        </section>
 
-    <section>
-        <h2>Professional Experience</h2>
-        <ul>
-            <li><strong>Data Analyst Intern | KultureHire:</strong> Cleaned data and created an insightful Excel dashboard for leadership decisions.</li>
-            <li><strong>Quality Inspector | Aerospace Manufacturing:</strong> Conducted visual inspections, root cause analysis, and defect documentation.</li>
-        </ul>
-    </section>
+        <section class="section projects">
+            <h2 class="section-title">Projects</h2>
+            <ul>
+                <li><strong>Gen Z Career Aspirations (Excel Dashboard):</strong> Analyzed survey data and created an interactive dashboard.</li>
+                <li><strong>Karnataka 2023 Election Dashboard:</strong> Used Power BI & DAX to analyze voting patterns and insights.</li>
+                <li><strong>Upstox F&O Real-Time Dashboard:</strong> Implemented measures, calculated columns, and streaming dataset.</li>
+                <li><strong>Czechoslovakia Banking Analysis:</strong> Integrated Snowflake with Power BI for in-depth predictive analytics.</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Certifications</h2>
-        <ul>
-            <li>Microsoft Excel Pivot Table and Analysis Beginner to Pro (Udemy) – Oct 2024</li>
-        </ul>
-    </section>
+        <section class="section experience">
+            <h2 class="section-title">Professional Experience</h2>
+            <ul>
+                <li><strong>Data Analyst Intern – KultureHire:</strong> Cleaned datasets, built dashboards, and delivered insights for decision-making.</li>
+                <li><strong>Quality Inspector – Aerospace Manufacturing:</strong> Conducted inspections, RCA, defect analysis, and documentation.</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Contact Me</h2>
-        <p >📧 <a href="Email" style="color:black">madhu8323@gmail.com</a> | 🔗 <a href="https://www.linkedin.com/in/madhukumar-v-737415181" target="_blank" style="color:black">LinkedIn</a></p>
-    </section>
+        <section class="section certifications">
+            <h2 class="section-title">Certifications</h2>
+            <ul>
+                <li>Excel Pivot Tables & Analysis – Udemy (2024)</li>
+            </ul>
+        </section>
+    </main>
 </div>
 
-<footer>
-    <p>&copy; 2024 Madhukumar V. All Rights Reserved.</p>
-</footer>
 </body>
 </html>
